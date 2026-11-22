@@ -20,10 +20,10 @@ La calificación total es de **10 puntos**. Cada criterio vale **0,50 puntos**. 
 | **4.** Devuelve el precio final | Todas las ramas devuelven un número mediante `return` | Devuelve un resultado en algunas ramas, pero en otras solo lo muestra o no devuelve nada |
 | **5.** Recorre el array para calcular la recaudación | `calcularRecaudacion` recorre `compras` con un bucle usando su longitud | Recorre parte del array o usa una cantidad fija de posiciones |
 | **5.** Acumula los importes | Suma todos los elementos, incluidos importes menores de 50 € | Inicia un acumulador y suma parte de los importes, pero omite alguno |
-| **5.** Devuelve la recaudación | Devuelve 220 para el ejemplo y 0 para un array vacío | Obtiene el total del ejemplo, pero no lo devuelve o falla con el array vacío |
-| **5.** Recorre el array para contar compras | `contarComprasConEnvoltorio` revisa todos los elementos mediante un bucle | Revisa solo parte del array o depende de posiciones fijas |
-| **5.** Aplica el umbral de 50 € al contador | Cuenta cada compra de 50 € o más; no cuenta las inferiores | Cuenta compras, pero excluye 50 € o incluye importes inferiores |
-| **5.** Devuelve el número de compras | Devuelve 2 para el ejemplo y 0 para un array vacío | Obtiene el conteo del ejemplo, pero no lo devuelve o falla con el array vacío |
+| **5.** Devuelve la recaudación | Devuelve 190 para el ejemplo y 0 para un array vacío | Obtiene el total del ejemplo, pero no lo devuelve o falla con el array vacío |
+| **5.** Recorre el array para contar compras con premio | `contarComprasConPremio` revisa todos los elementos mediante un bucle | Revisa solo parte del array o depende de posiciones fijas |
+| **5.** Aplica el umbral del cheque regalo | Cuenta cada compra de 50 € o más; no cuenta las inferiores | Cuenta compras, pero excluye 50 € o incluye importes inferiores |
+| **5.** Devuelve el número de compras con premio | Devuelve 2 para el ejemplo y 0 para un array vacío | Obtiene el conteo del ejemplo, pero no lo devuelve o falla con el array vacío |
 | **TOTAL** | **10 puntos** | |
 
 ## Resumen por ejercicio

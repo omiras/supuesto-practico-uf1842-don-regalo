@@ -10,8 +10,8 @@
 <body data-ejercicio="5">
   <main class="lesson">
     <header><p><a href="index.html">← Todos los ejercicios</a></p><h1>Ejercicio 5 · Resumen de ventas</h1><p>Arrays y bucles · 3 puntos</p></header>
-    <section><h2>Antes de empezar</h2><p>El array <code>compras</code> guarda los importes de las compras del día. Por ejemplo, <code>[25, 60, 15, 80, 40]</code> representa cinco compras.</p></section>
-    <section><h2>Tu turno</h2><ol><li>Completa <code>calcularRecaudacion(compras)</code>: recorre el array y devuelve la suma de todos los importes.</li><li>Completa <code>contarComprasConEnvoltorio(compras)</code>: recorre el array y devuelve cuántas compras son de <strong>50 € o más</strong>.</li></ol><p>Para <code>[25, 60, 15, 80, 40]</code>, los resultados son <strong>220 €</strong> y <strong>2 compras</strong>. Cada función debe resolver su parte con un bucle. Si el array está vacío, ambas devuelven <code>0</code>.</p><p>Edita el último bloque <code>&lt;script&gt;</code>, guarda y recarga la página.</p></section>
+    <section><h2>Antes de empezar</h2><p>Al terminar la jornada, Don Regalo quiere saber cuánto dinero ha ingresado con las compras del día. También quiere saber cuántas compras han llegado a <strong>50 € o más</strong>: a esos clientes les entregará un <strong>cheque regalo para su próxima compra</strong>.</p><p>El array <code>compras</code> guarda el importe de cada compra. Por ejemplo, <code>[25, 60, 15, 50, 40]</code> representa cinco compras distintas.</p></section>
+    <section><h2>Tu turno</h2><ol><li>Completa <code>calcularRecaudacion(compras)</code>: recorre el array, suma todos los importes y devuelve la <strong>recaudación total</strong>.</li><li>Completa <code>contarComprasConPremio(compras)</code>: recorre el array y devuelve <strong>cuántas compras</strong> son de 50 € o más y, por tanto, reciben un cheque regalo.</li></ol><p>Para <code>[25, 60, 15, 50, 40]</code>, los resultados son <strong>190 € de recaudación</strong> y <strong>2 compras con premio</strong>. Cada función debe resolver su parte con un bucle. Si el array está vacío, ambas devuelven <code>0</code>.</p><p>Edita el último bloque <code>&lt;script&gt;</code>, guarda y recarga la página.</p></section>
     <section><h2>Comprueba tu solución</h2><p>Las pruebas revisan cada función por separado para que puedas detectar cuál debes corregir.</p><p id="resumen" aria-live="polite"></p><ul id="resultados" class="resultados" aria-live="polite"></ul></section>
   </main>
   <!-- CÓDIGO DEL ALUMNADO: completa las dos funciones. -->
@@ -20,8 +20,8 @@
       // Recorre el array y devuelve la suma. La función DEBE retornar un valor, NO SIRVE mostrarlo por consola
     }
 
-    function contarComprasConEnvoltorio(compras) {
-      // Recorre el array y devuelve cuántas compras llegan a 50 €. La función DEBE retornar un valor, NO SIRVE mostrarlo por consola
+    function contarComprasConPremio(compras) {
+      // Recorre el array y devuelve cuántas compras reciben un cheque regalo. La función DEBE retornar un valor, NO SIRVE mostrarlo por consola
     }
   </script>
 </body>

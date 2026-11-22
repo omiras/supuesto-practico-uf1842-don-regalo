@@ -19,11 +19,11 @@ const ejercicios = {
     { funcion: "aplicarDescuento", entrada: [50, "NAVIDAD10"], esperado: 45 }
   ],
   "5": [
-    { funcion: "calcularRecaudacion", entrada: [[25, 60, 15, 80, 40]], esperado: 220 },
+    { funcion: "calcularRecaudacion", entrada: [[25, 60, 15, 50, 40]], esperado: 190 },
     { funcion: "calcularRecaudacion", entrada: [[]], esperado: 0 },
-    { funcion: "contarComprasConEnvoltorio", entrada: [[25, 60, 15, 80, 40]], esperado: 2 },
-    { funcion: "contarComprasConEnvoltorio", entrada: [[50, 49, 50]], esperado: 2 },
-    { funcion: "contarComprasConEnvoltorio", entrada: [[]], esperado: 0 }
+    { funcion: "contarComprasConPremio", entrada: [[25, 60, 15, 50, 40]], esperado: 2 },
+    { funcion: "contarComprasConPremio", entrada: [[50, 49, 50]], esperado: 2 },
+    { funcion: "contarComprasConPremio", entrada: [[]], esperado: 0 }
   ]
 };
 
