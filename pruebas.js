@@ -30,6 +30,7 @@ const ejercicios = {
     { funcion: "rachaVentas", entrada: [[10, 20, 30]], esperado: 0 },
     { funcion: "rachaVentas", entrada: [[50, 50, 50]], esperado: 3 },
     { funcion: "rachaVentas", entrada: [[60, 50, 20, 50]], esperado: 2 },
+    { funcion: "rachaVentas", entrada: [[50, 60, 75, 20, 35, 49, 10, 55, 80, 90, 65, 70, 15, 65, 20, 45, 60, 30, 10, 75]], esperado: 5 },
     { funcion: "rachaVentas", entrada: [[]], esperado: 0 }
   ]
 };
