@@ -40,3 +40,5 @@ La calificación total es de **10 puntos**. Cada criterio vale **0,50 puntos**. 
 ## Aplicación de la puntuación
 
 Las comprobaciones de las páginas HTML son una ayuda para detectar errores, pero **no asignan la nota**. En los ejercicios 1, 2 y 3 solo comprueban los datos iniciales; hay que revisar el código y, si hace falta, cambiar los datos para verificar otras situaciones. Se admiten soluciones equivalentes que cumplan el enunciado, aunque estén escritas de otra manera.
+
+El reto opcional «Racha de ventas» no forma parte de los criterios puntuables y no modifica la calificación sobre 10 puntos.

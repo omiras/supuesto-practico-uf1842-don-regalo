@@ -26,4 +26,6 @@ El uso indiscriminado de código generado mediante IA puede dificultar la compre
 | [4 · Códigos de descuento](index4.html) | Función con parámetros y `return` | 2,5 |
 | [5 · Resumen de ventas](index5.html) | Recorrido de arrays | 3 |
 
+Si terminas y revisas los cinco ejercicios, puedes intentar el [reto opcional · Racha de ventas](index6.html). No tiene puntuación ni modifica la nota.
+
 Las pruebas ayudan a revisar tu trabajo. La corrección también tendrá en cuenta el código y si cumple lo solicitado en el enunciado.

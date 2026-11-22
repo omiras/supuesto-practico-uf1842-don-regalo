@@ -24,6 +24,13 @@ const ejercicios = {
     { funcion: "contarComprasConPremio", entrada: [[25, 60, 15, 50, 40]], esperado: 2 },
     { funcion: "contarComprasConPremio", entrada: [[50, 49, 50]], esperado: 2 },
     { funcion: "contarComprasConPremio", entrada: [[]], esperado: 0 }
+  ],
+  "6": [
+    { funcion: "rachaVentas", entrada: [[25, 50, 60, 15, 80, 50, 50]], esperado: 3 },
+    { funcion: "rachaVentas", entrada: [[10, 20, 30]], esperado: 0 },
+    { funcion: "rachaVentas", entrada: [[50, 50, 50]], esperado: 3 },
+    { funcion: "rachaVentas", entrada: [[60, 50, 20, 50]], esperado: 2 },
+    { funcion: "rachaVentas", entrada: [[]], esperado: 0 }
   ]
 };
 
