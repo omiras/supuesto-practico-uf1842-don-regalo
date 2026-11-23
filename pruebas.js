@@ -4,13 +4,13 @@
 // El código que se entrega se escribe en el bloque <script> de cada ejercicio.
 const ejercicios = {
   "1": [
-    { descripcion: "Importe total redondeado de 3 peluches y 2 juegos", esperado: [72.38], salida: true }
+    { descripcion: "Importe total redondeado de 3 peluches y 2 juegos", esperado: [72.38], salida: true, aceptaTextoNumerico: true }
   ],
   "2": [
     { descripcion: "Compra de 60 € sin tarjeta", esperado: ["Sin envoltorio gratuito"], salida: true }
   ],
   "3": [
-    { descripcion: "Precios de los cuatro artículos con IVA", esperado: [121, 24.19, 60.5, 181.5], salida: true }
+    { descripcion: "Precios de los cuatro artículos con IVA", esperado: [121, 24.19, 60.5, 181.5], salida: true, aceptaTextoNumerico: true }
   ],
   "4": [
     { funcion: "aplicarDescuento", entrada: [100, "NAVIDAD10"], esperado: 90 },
@@ -78,7 +78,7 @@ for (let i = 0; i < pruebas.length; i++) {
     }
   }
 
-  const correcto = !error && iguales(recibido, prueba.esperado);
+  const correcto = !error && (prueba.aceptaTextoNumerico ? igualesImportes(recibido, prueba.esperado) : iguales(recibido, prueba.esperado));
   if (correcto) aciertos++;
   const item = document.createElement("li");
   item.className = correcto ? "bien" : "mal";
@@ -115,6 +115,17 @@ function iguales(a, b) {
   return a === b;
 }
 
+function igualesImportes(recibidos, esperados) {
+  if (!Array.isArray(recibidos) || recibidos.length !== esperados.length) return false;
+  for (let i = 0; i < esperados.length; i++) {
+    const valor = recibidos[i];
+    if (typeof valor === "number" && valor === esperados[i]) continue;
+    if (typeof valor === "string" && /^-?\d+(?:\.\d{1,2})?$/.test(valor) && Number(valor) === esperados[i]) continue;
+    return false;
+  }
+  return true;
+}
+
 function formatear(valor) {
   if (valor === undefined) return "ningún valor";
   if (Array.isArray(valor)) return valor.length ? "[" + valor.map(formatear).join(", ") + "]" : "[]";
@@ -136,7 +147,7 @@ function describirSalida(valores, ejercicio, esperado) {
     return inicio + " el mensaje " + formatear(valores[0]) + ".";
   }
   if (ejercicio === "3") {
-    const lineas = valores.map(valor => typeof valor === "number" ? String(valor) : formatear(valor) + " (no es un número)");
+    const lineas = valores.map(formatear);
     return (esperado ? "Se esperan " : "Tu programa mostró ") + valores.length + " resultados, uno por línea:\n" + lineas.join("\n");
   }
   return inicio + " " + valores.length + " líneas: " + valores.map(formatear).join(" · ") + ".";

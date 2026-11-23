@@ -6,13 +6,13 @@ La calificación total es de **10 puntos**. Cada criterio vale **0,50 puntos**. 
 | --- | --- | --- |
 | **1.** Usa las variables de cantidades y precios facilitadas | El cálculo utiliza `peluches`, `juegos`, `precioPeluche` y `precioJuegoMesa` | Utiliza correctamente algunas de las variables, pero deja algún dato fijo en la operación o ignora una cantidad |
 | **1.** Calcula el importe de ambas clases de artículos | Multiplica cada cantidad por su precio y suma los dos importes; con los datos iniciales obtiene 72,375 antes del redondeo | Calcula correctamente el importe de una clase de artículos, pero falta la otra o la suma |
-| **1.** Redondea y muestra el resultado como número | Redondea el total a 72,38 y muestra una única salida numérica con `console.log` | Calcula el total pero no lo redondea a dos decimales, o muestra el valor redondeado como texto |
+| **1.** Redondea y muestra el resultado | Redondea el total a 72,38 y lo muestra una sola vez, como número o como texto numérico de `toFixed(2)` | Calcula el total pero lo muestra sin redondear, o redondea bien pero añade salidas adicionales |
 | **2.** Comprueba el importe mínimo | La condición acepta 50 € y cantidades superiores, y rechaza las inferiores | Usa una comparación de importe, pero excluye 50 € o aplica mal el umbral |
 | **2.** Combina las dos condiciones con `&&` | Concede el envoltorio solo si el importe llega a 50 € **y** hay tarjeta | Comprueba las dos condiciones, pero la combinación no representa correctamente la regla |
 | **2.** Usa `if...else` y muestra el mensaje correspondiente | Muestra exactamente un mensaje correcto para cada resultado posible | Existe el `if...else`, pero falta o es incorrecto uno de los mensajes |
 | **3.** Recorre el array de precios | Usa un bucle que revisa todos los elementos de `precios` y muestra un resultado por artículo, en el mismo orden | Hay un bucle, pero omite artículos o depende de una cantidad fija de posiciones |
 | **3.** Calcula el precio con IVA | Aplica el 21 % al precio de cada elemento del array | Aplica el IVA a algunos artículos, pero usa una operación incorrecta en otros |
-| **3.** Redondea y muestra los resultados como números | Redondea a un máximo de dos decimales y muestra `121`, `24.19`, `60.5` y `181.5` como números | Calcula los importes pero deja `24.1879` sin redondear, o muestra los resultados redondeados como texto |
+| **3.** Redondea y muestra los resultados | Muestra los cuatro importes redondeados (`121`, `24.19`, `60.5`, `181.5`) como números o textos numéricos de `toFixed(2)`, en el orden del array | Calcula los importes pero deja `24.1879` sin redondear, u omite algún resultado |
 | **4.** Reconoce `NAVIDAD10` | El código exacto aplica un 10 % | Reconoce el código, pero calcula mal el descuento |
 | **4.** Reconoce `NAVIDAD20` | El código exacto aplica un 20 % | Reconoce el código, pero calcula mal el descuento |
 | **4.** Trata los demás códigos | Un código distinto devuelve el precio original | Existe un caso para los demás códigos, pero altera el precio o acepta códigos incorrectos |

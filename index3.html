@@ -12,18 +12,18 @@
   <main class="lesson">
     <header><p><a href="index.html">← Todos los ejercicios</a></p><h1>Ejercicio 3 · Precios con IVA</h1><p>Bucles y arrays · 1,5 puntos</p></header>
     <section><h2>Antes de empezar</h2><p>Don Regalo guarda en un array los precios de varios artículos <strong>antes de aplicar el IVA</strong>. Quiere mostrar al personal de la tienda cuánto cuesta cada artículo después de añadir un <strong>21 % de IVA</strong>.</p></section>
-    <section><h2>Tu turno</h2><p>Recorre el array <code>precios</code> con un bucle. Para cada precio, calcula cuánto cuesta después de añadir el <strong>21 % de IVA</strong>, redondea el resultado a <strong>un máximo de dos decimales</strong> y muéstralo por consola como <strong>número</strong>. Debe aparecer un único número por artículo, en el mismo orden que en el array.</p><p>Haz los cálculos a partir de los valores del array; no escribas directamente los resultados esperados. Edita el último bloque <code>&lt;script&gt;</code>, guarda y recarga la página.</p></section>
-    <section><h2>Resultado esperado en consola</h2><p>Con los precios iniciales, deben aparecer estos cuatro números, uno por línea y en este orden:</p><pre>121
+    <section><h2>Tu turno</h2><p>Recorre el array <code>precios</code> con un bucle. Para cada precio, calcula cuánto cuesta después de añadir el <strong>21 % de IVA</strong>, <strong>redondéalo a dos decimales</strong> y muéstralo con <code>console.log</code>. Debe aparecer un único resultado por artículo, en el mismo orden que en el array. Se acepta cada resultado tanto como número como en el texto que devuelve <code>toFixed(2)</code>; no hace falta convertirlo.</p><p>Haz los cálculos a partir de los valores del array; no escribas directamente los resultados esperados. Edita el último bloque <code>&lt;script&gt;</code>, guarda y recarga la página.</p></section>
+    <section><h2>Resultado esperado en consola</h2><p>Con los precios iniciales, deben aparecer estos cuatro importes redondeados, uno por línea y en este orden. Pueden verse como <code>121</code> y <code>60.5</code> si se muestran como números, o como <code>121.00</code> y <code>60.50</code> si se usa <code>toFixed(2)</code>.</p><pre>121
 24.19
 60.5
 181.5</pre></section>
-    <section><h2>Comprueba tu solución</h2><p>La página compara los cuatro números mostrados en la consola con los esperados. La corrección también revisará que recorras el array, calcules el IVA y redondees los precios que lo necesiten.</p><p id="resumen" aria-live="polite"></p><ul id="resultados" class="resultados" aria-live="polite"></ul></section>
+    <section><h2>Comprueba tu solución</h2><p>La página compara los cuatro importes mostrados en la consola con los esperados. La corrección también revisará que recorras el array, calcules el IVA y redondees los importes.</p><p id="resumen" aria-live="polite"></p><ul id="resultados" class="resultados" aria-live="polite"></ul></section>
   </main>
   <!-- CÓDIGO DEL ALUMNADO: escribe el programa debajo del array. -->
   <script>
     const precios = [100, 19.99, 50, 150];
 
-    // Recorre el array, calcula cada precio con IVA, redondéalo y muestra un número por artículo.
+    // Recorre el array, calcula cada precio con IVA, redondéalo y muestra un resultado por artículo.
   </script>
 </body>
 </html>
