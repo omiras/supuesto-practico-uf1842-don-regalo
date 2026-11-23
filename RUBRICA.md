@@ -5,14 +5,14 @@ La calificación total es de **10 puntos**. Cada criterio vale **0,50 puntos**. 
 | Ejercicio y criterio evaluable | Puntuación completa (0,50) | Puntuación parcial (0,25) |
 | --- | --- | --- |
 | **1.** Usa las variables de cantidades y precios facilitadas | El cálculo utiliza `peluches`, `juegos`, `precioPeluche` y `precioJuegoMesa` | Utiliza correctamente algunas de las variables, pero deja algún dato fijo en la operación o ignora una cantidad |
-| **1.** Calcula el importe de ambas clases de artículos | Multiplica cada cantidad por su precio y suma los dos importes; con los datos iniciales obtiene 72 | Calcula correctamente el importe de una clase de artículos, pero falta la otra o la suma |
-| **1.** Muestra el resultado como número | Muestra una única salida numérica con `console.log` | Muestra el total correcto como texto o acompañado de otras salidas que impiden la comprobación directa |
+| **1.** Calcula el importe de ambas clases de artículos | Multiplica cada cantidad por su precio y suma los dos importes; con los datos iniciales obtiene 72,375 antes del redondeo | Calcula correctamente el importe de una clase de artículos, pero falta la otra o la suma |
+| **1.** Redondea y muestra el resultado como número | Redondea el total a 72,38 y muestra una única salida numérica con `console.log` | Calcula el total pero no lo redondea a dos decimales, o muestra el valor redondeado como texto |
 | **2.** Comprueba el importe mínimo | La condición acepta 50 € y cantidades superiores, y rechaza las inferiores | Usa una comparación de importe, pero excluye 50 € o aplica mal el umbral |
 | **2.** Combina las dos condiciones con `&&` | Concede el envoltorio solo si el importe llega a 50 € **y** hay tarjeta | Comprueba las dos condiciones, pero la combinación no representa correctamente la regla |
 | **2.** Usa `if...else` y muestra el mensaje correspondiente | Muestra exactamente un mensaje correcto para cada resultado posible | Existe el `if...else`, pero falta o es incorrecto uno de los mensajes |
 | **3.** Recorre el array de precios | Usa un bucle que revisa todos los elementos de `precios` y muestra una línea por artículo | Hay un bucle, pero omite artículos o depende de una cantidad fija de posiciones |
 | **3.** Numera los artículos y construye el mensaje | Los numera desde 1 en orden y muestra el texto solicitado para cada artículo | La numeración es correcta pero el mensaje está incompleto, o el texto es correcto pero numera desde 0 |
-| **3.** Calcula y presenta el precio con IVA | Aplica el 21 % a cada precio y muestra todos los resultados con exactamente dos decimales, incluido el precio de 19,99 € | Calcula bien el IVA pero no muestra siempre dos decimales, o usa dos decimales con algún cálculo incorrecto |
+| **3.** Calcula y presenta el precio con IVA | Aplica el 21 % a cada precio y muestra los resultados en el formato solicitado | Calcula bien el IVA pero falla el formato, o muestra el formato correcto con algún cálculo equivocado |
 | **4.** Reconoce `NAVIDAD10` | El código exacto aplica un 10 % | Reconoce el código, pero calcula mal el descuento |
 | **4.** Reconoce `NAVIDAD20` | El código exacto aplica un 20 % | Reconoce el código, pero calcula mal el descuento |
 | **4.** Trata los demás códigos | Un código distinto devuelve el precio original | Existe un caso para los demás códigos, pero altera el precio o acepta códigos incorrectos |

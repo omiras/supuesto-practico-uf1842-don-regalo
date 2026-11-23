@@ -4,13 +4,13 @@
 // El código que se entrega se escribe en el bloque <script> de cada ejercicio.
 const ejercicios = {
   "1": [
-    { descripcion: "Importe total de 3 peluches y 2 juegos", esperado: [72], salida: true }
+    { descripcion: "Importe total redondeado de 3 peluches y 2 juegos", esperado: [72.38], salida: true }
   ],
   "2": [
     { descripcion: "Compra de 60 € sin tarjeta", esperado: ["Sin envoltorio gratuito"], salida: true }
   ],
   "3": [
-    { descripcion: "Precios de los cuatro artículos con IVA", esperado: ["El artículo 1 cuesta 121.00 tras aplicar un 21% de IVA", "El artículo 2 cuesta 24.19 tras aplicar un 21% de IVA", "El artículo 3 cuesta 60.50 tras aplicar un 21% de IVA", "El artículo 4 cuesta 181.50 tras aplicar un 21% de IVA"], salida: true }
+    { descripcion: "Precios de los cuatro artículos con IVA", esperado: ["El artículo 1 cuesta 121 tras aplicar un 21% de IVA", "El artículo 2 cuesta 60.5 tras aplicar un 21% de IVA", "El artículo 3 cuesta 242 tras aplicar un 21% de IVA", "El artículo 4 cuesta 181.5 tras aplicar un 21% de IVA"], salida: true }
   ],
   "4": [
     { funcion: "aplicarDescuento", entrada: [100, "NAVIDAD10"], esperado: 90 },
