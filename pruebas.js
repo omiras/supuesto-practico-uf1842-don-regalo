@@ -10,7 +10,7 @@ const ejercicios = {
     { descripcion: "Compra de 60 € sin tarjeta", esperado: ["Sin envoltorio gratuito"], salida: true }
   ],
   "3": [
-    { descripcion: "Precios de los cuatro artículos con IVA", esperado: ["El artículo 1 cuesta 121 tras aplicar un 21% de IVA", "El artículo 2 cuesta 60.5 tras aplicar un 21% de IVA", "El artículo 3 cuesta 242 tras aplicar un 21% de IVA", "El artículo 4 cuesta 181.5 tras aplicar un 21% de IVA"], salida: true }
+    { descripcion: "Precios de los cuatro artículos con IVA", esperado: ["El artículo 1 cuesta 121€ tras aplicar un 21% de IVA", "El artículo 2 cuesta 60.5€ tras aplicar un 21% de IVA", "El artículo 3 cuesta 242€ tras aplicar un 21% de IVA", "El artículo 4 cuesta 181.5€ tras aplicar un 21% de IVA"], salida: true }
   ],
   "4": [
     { funcion: "aplicarDescuento", entrada: [100, "NAVIDAD10"], esperado: 90 },
