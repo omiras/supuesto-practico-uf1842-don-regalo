@@ -10,9 +10,9 @@ La calificación total es de **10 puntos**. Cada criterio vale **0,50 puntos**. 
 | **2.** Comprueba el importe mínimo | La condición acepta 50 € y cantidades superiores, y rechaza las inferiores | Usa una comparación de importe, pero excluye 50 € o aplica mal el umbral |
 | **2.** Combina las dos condiciones con `&&` | Concede el envoltorio solo si el importe llega a 50 € **y** hay tarjeta | Comprueba las dos condiciones, pero la combinación no representa correctamente la regla |
 | **2.** Usa `if...else` y muestra el mensaje correspondiente | Muestra exactamente un mensaje correcto para cada resultado posible | Existe el `if...else`, pero falta o es incorrecto uno de los mensajes |
-| **3.** Recorre el array de precios | Usa un bucle que revisa todos los elementos de `precios` y muestra una línea por artículo | Hay un bucle, pero omite artículos o depende de una cantidad fija de posiciones |
-| **3.** Numera los artículos y construye el mensaje | Los numera desde 1 en orden y muestra el texto solicitado para cada artículo | La numeración es correcta pero el mensaje está incompleto, o el texto es correcto pero numera desde 0 |
-| **3.** Calcula y presenta el precio con IVA | Aplica el 21 % a cada precio y muestra los resultados en el formato solicitado | Calcula bien el IVA pero falla el formato, o muestra el formato correcto con algún cálculo equivocado |
+| **3.** Recorre el array de precios | Usa un bucle que revisa todos los elementos de `precios` y muestra un resultado por artículo, en el mismo orden | Hay un bucle, pero omite artículos o depende de una cantidad fija de posiciones |
+| **3.** Calcula el precio con IVA | Aplica el 21 % al precio de cada elemento del array | Aplica el IVA a algunos artículos, pero usa una operación incorrecta en otros |
+| **3.** Redondea y muestra los resultados como números | Redondea a un máximo de dos decimales y muestra `121`, `24.19`, `60.5` y `181.5` como números | Calcula los importes pero deja `24.1879` sin redondear, o muestra los resultados redondeados como texto |
 | **4.** Reconoce `NAVIDAD10` | El código exacto aplica un 10 % | Reconoce el código, pero calcula mal el descuento |
 | **4.** Reconoce `NAVIDAD20` | El código exacto aplica un 20 % | Reconoce el código, pero calcula mal el descuento |
 | **4.** Trata los demás códigos | Un código distinto devuelve el precio original | Existe un caso para los demás códigos, pero altera el precio o acepta códigos incorrectos |

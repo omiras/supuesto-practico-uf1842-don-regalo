@@ -10,7 +10,7 @@ const ejercicios = {
     { descripcion: "Compra de 60 € sin tarjeta", esperado: ["Sin envoltorio gratuito"], salida: true }
   ],
   "3": [
-    { descripcion: "Precios de los cuatro artículos con IVA", esperado: ["El artículo 1 cuesta 121€ tras aplicar un 21% de IVA", "El artículo 2 cuesta 60.5€ tras aplicar un 21% de IVA", "El artículo 3 cuesta 242€ tras aplicar un 21% de IVA", "El artículo 4 cuesta 181.5€ tras aplicar un 21% de IVA"], salida: true }
+    { descripcion: "Precios de los cuatro artículos con IVA", esperado: [121, 24.19, 60.5, 181.5], salida: true }
   ],
   "4": [
     { funcion: "aplicarDescuento", entrada: [100, "NAVIDAD10"], esperado: 90 },
@@ -136,7 +136,8 @@ function describirSalida(valores, ejercicio, esperado) {
     return inicio + " el mensaje " + formatear(valores[0]) + ".";
   }
   if (ejercicio === "3") {
-    return (esperado ? "Se esperan " : "Tu programa mostró ") + valores.length + " líneas:\n" + valores.join("\n");
+    const lineas = valores.map(valor => typeof valor === "number" ? String(valor) : formatear(valor) + " (no es un número)");
+    return (esperado ? "Se esperan " : "Tu programa mostró ") + valores.length + " resultados, uno por línea:\n" + lineas.join("\n");
   }
   return inicio + " " + valores.length + " líneas: " + valores.map(formatear).join(" · ") + ".";
 }
