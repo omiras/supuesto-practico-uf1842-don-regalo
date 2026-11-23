@@ -10,9 +10,9 @@ La calificación total es de **10 puntos**. Cada criterio vale **0,50 puntos**. 
 | **2.** Comprueba el importe mínimo | La condición acepta 50 € y cantidades superiores, y rechaza las inferiores | Usa una comparación de importe, pero excluye 50 € o aplica mal el umbral |
 | **2.** Combina las dos condiciones con `&&` | Concede el envoltorio solo si el importe llega a 50 € **y** hay tarjeta | Comprueba las dos condiciones, pero la combinación no representa correctamente la regla |
 | **2.** Usa `if...else` y muestra el mensaje correspondiente | Muestra exactamente un mensaje correcto para cada resultado posible | Existe el `if...else`, pero falta o es incorrecto uno de los mensajes |
-| **3.** Usa un bucle relacionado con `cantidad` | El bucle se repite tantas veces como indica `cantidad` | Hay un bucle, pero repite una vez de más o de menos |
-| **3.** Numera los pedidos correctamente | Empieza en 1, termina en `cantidad` y respeta el orden | Muestra pedidos, pero comienza en 0, omite uno o se pasa del último |
-| **3.** Muestra una línea por pedido | Cada vuelta muestra `Preparando pedido N`; con `cantidad = 0` no muestra ninguna | La salida es reconocible, pero falta el número, hay líneas adicionales o falla el caso 0 |
+| **3.** Recorre el array de precios | Usa un bucle que revisa todos los elementos de `precios` y muestra una línea por artículo | Hay un bucle, pero omite artículos o depende de una cantidad fija de posiciones |
+| **3.** Numera los artículos y construye el mensaje | Los numera desde 1 en orden y muestra el texto solicitado para cada artículo | La numeración es correcta pero el mensaje está incompleto, o el texto es correcto pero numera desde 0 |
+| **3.** Calcula y presenta el precio con IVA | Aplica el 21 % a cada precio y muestra todos los resultados con exactamente dos decimales, incluido el precio de 19,99 € | Calcula bien el IVA pero no muestra siempre dos decimales, o usa dos decimales con algún cálculo incorrecto |
 | **4.** Reconoce `NAVIDAD10` | El código exacto aplica un 10 % | Reconoce el código, pero calcula mal el descuento |
 | **4.** Reconoce `NAVIDAD20` | El código exacto aplica un 20 % | Reconoce el código, pero calcula mal el descuento |
 | **4.** Trata los demás códigos | Un código distinto devuelve el precio original | Existe un caso para los demás códigos, pero altera el precio o acepta códigos incorrectos |
@@ -32,7 +32,7 @@ La calificación total es de **10 puntos**. Cada criterio vale **0,50 puntos**. 
 | --- | ---: |
 | 1. Importe de la compra | 1,50 |
 | 2. Envoltorio gratuito | 1,50 |
-| 3. Preparación de pedidos | 1,50 |
+| 3. Precios con IVA | 1,50 |
 | 4. Códigos de descuento | 2,50 |
 | 5. Resumen de ventas | 3,00 |
 | **Total** | **10,00** |

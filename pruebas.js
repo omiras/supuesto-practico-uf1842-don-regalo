@@ -10,7 +10,7 @@ const ejercicios = {
     { descripcion: "Compra de 60 € sin tarjeta", esperado: ["Sin envoltorio gratuito"], salida: true }
   ],
   "3": [
-    { descripcion: "Preparación de 8 pedidos", esperado: ["Preparando pedido 1", "Preparando pedido 2", "Preparando pedido 3", "Preparando pedido 4", "Preparando pedido 5", "Preparando pedido 6", "Preparando pedido 7", "Preparando pedido 8"], salida: true }
+    { descripcion: "Precios de los cuatro artículos con IVA", esperado: ["El artículo 1 cuesta 121.00 tras aplicar un 21% de IVA", "El artículo 2 cuesta 24.19 tras aplicar un 21% de IVA", "El artículo 3 cuesta 60.50 tras aplicar un 21% de IVA", "El artículo 4 cuesta 181.50 tras aplicar un 21% de IVA"], salida: true }
   ],
   "4": [
     { funcion: "aplicarDescuento", entrada: [100, "NAVIDAD10"], esperado: 90 },
@@ -82,11 +82,13 @@ for (let i = 0; i < pruebas.length; i++) {
   if (correcto) aciertos++;
   const item = document.createElement("li");
   item.className = correcto ? "bien" : "mal";
+  if (numero === "3") item.className += " lineas";
   const nombre = prueba.salida ? prueba.descripcion : prueba.funcion + "(" + prueba.entrada.map(formatear).join(", ") + ")";
   if (prueba.salida) {
-    item.textContent = "Prueba " + (i + 1) + " · " + nombre + ". " +
-      describirSalida(prueba.esperado, numero, true) + " " +
-      (error ? "Error: " + error : describirSalida(recibido, numero, false) + " " + (correcto ? "Correcta." : "Revisa este caso."));
+    const separador = numero === "3" ? "\n" : " ";
+    item.textContent = "Prueba " + (i + 1) + " · " + nombre + "." + separador +
+      describirSalida(prueba.esperado, numero, true) + separador +
+      (error ? "Error: " + error : describirSalida(recibido, numero, false) + separador + (correcto ? "Correcta." : "Revisa este caso."));
   } else {
     item.textContent = "Prueba " + (i + 1) + " · " + nombre +
       ": se espera " + formatear(prueba.esperado) + ". " +
@@ -132,6 +134,9 @@ function describirSalida(valores, ejercicio, esperado) {
   if (ejercicio === "2") {
     if (valores.length !== 1) return inicio + " " + valores.length + " mensajes; debe ser uno solo.";
     return inicio + " el mensaje " + formatear(valores[0]) + ".";
+  }
+  if (ejercicio === "3") {
+    return (esperado ? "Se esperan " : "Tu programa mostró ") + valores.length + " líneas:\n" + valores.join("\n");
   }
   return inicio + " " + valores.length + " líneas: " + valores.map(formatear).join(" · ") + ".";
 }

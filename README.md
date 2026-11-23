@@ -22,7 +22,7 @@ El uso indiscriminado de código generado mediante IA puede dificultar la compre
 | --- | --- | ---: |
 | [1 · Importe de la compra](index1.html) | Variables y operaciones | 1,5 |
 | [2 · Envoltorio gratuito](index2.html) | `if...else` y `&&` | 1,5 |
-| [3 · Preparación de pedidos](index3.html) | Bucle | 1,5 |
+| [3 · Precios con IVA](index3.html) | Bucles y arrays | 1,5 |
 | [4 · Códigos de descuento](index4.html) | Función con parámetros y `return` | 2,5 |
 | [5 · Resumen de ventas](index5.html) | Recorrido de arrays | 3 |
 

@@ -12,6 +12,10 @@
     <header><p><a href="index.html">← Todos los ejercicios</a></p><h1>Ejercicio 4 · Códigos de descuento</h1><p>Funciones y condiciones · 2,5 puntos</p></header>
     <section><h2>Antes de empezar</h2><p>Durante la campaña navideña, Don Regalo acepta dos códigos de texto: <code>NAVIDAD10</code> aplica un 10 % de descuento y <code>NAVIDAD20</code> aplica un 20 %. Cualquier otro código no tiene descuento.</p></section>
     <section><h2>Tu turno</h2><p>Completa <code>aplicarDescuento(precio, codigo)</code>. Compara <code>codigo</code> con los dos textos indicados y <strong>devuelve</strong> el precio final con <code>return</code>. Si no coincide con ninguno, devuelve el precio original.</p><p>Ejemplo: <code>aplicarDescuento(100, "NAVIDAD10")</code> debe devolver <code>90</code>. Las mayúsculas del código importan.</p><p>Edita el último bloque <code>&lt;script&gt;</code>, guarda y recarga la página.</p></section>
+    <section><h2>Resultado esperado en consola</h2><p>Las cuatro llamadas de ejemplo que aparecen al final del código deben mostrar estos números, en este orden:</p><pre>90
+80
+100
+45</pre></section>
     <section><h2>Comprueba tu solución</h2><p>Las pruebas comprueban ambos códigos y un código no válido.</p><p id="resumen" aria-live="polite"></p><ul id="resultados" class="resultados" aria-live="polite"></ul></section>
   </main>
   <!-- CÓDIGO DEL ALUMNADO: completa la función. -->
@@ -19,6 +23,12 @@
     function aplicarDescuento(precio, codigo) {
       // Escribe tu código aquí. La función DEBE retornar un valor, NO SIRVE mostrarlo por consola
     }
+
+    // Llamadas de ejemplo: estos console.log muestran lo que devuelve tu función.
+    console.log(aplicarDescuento(100, "NAVIDAD10"));
+    console.log(aplicarDescuento(100, "NAVIDAD20"));
+    console.log(aplicarDescuento(100, "OTRO"));
+    console.log(aplicarDescuento(50, "NAVIDAD10"));
   </script>
 </body>
 </html>

@@ -3,31 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ejercicio 3 · Preparación de pedidos</title>
+  <title>Ejercicio 3 · Precios con IVA</title>
   <link rel="stylesheet" href="style.css">
   <script src="captura.js"></script>
   <script src="pruebas.js" defer></script>
 </head>
 <body data-ejercicio="3">
   <main class="lesson">
-    <header><p><a href="index.html">← Todos los ejercicios</a></p><h1>Ejercicio 3 · Preparación de pedidos</h1><p>Bucle · 1,5 puntos</p></header>
-    <section><h2>Antes de empezar</h2><p>El personal de Don Regalo prepara los pedidos navideños por orden, comenzando por el número 1.</p></section>
-    <section><h2>Tu turno</h2><p>Debajo del dato inicial, usa un bucle para mostrar una línea por cada pedido, desde el 1 hasta <code>cantidad</code>. Si <code>cantidad</code> vale 0, no debe mostrarse ningún pedido.</p><p>Edita el último bloque <code>&lt;script&gt;</code>, guarda y recarga la página.</p></section>
-    <section><h2>Resultado esperado en consola</h2><p>Con <code>cantidad = 8</code>, deben aparecer estas ocho líneas, en este orden:</p><pre>Preparando pedido 1
-Preparando pedido 2
-Preparando pedido 3
-Preparando pedido 4
-Preparando pedido 5
-Preparando pedido 6
-Preparando pedido 7
-Preparando pedido 8</pre></section>
-    <section><h2>Comprueba tu solución</h2><p>La página comprueba las ocho líneas con el dato inicial. Después, cambia <code>cantidad</code> a <code>0</code> y comprueba que no aparece ningún pedido en la consola. Vuelve a poner 8 antes de entregar.</p><p id="resumen" aria-live="polite"></p><ul id="resultados" class="resultados" aria-live="polite"></ul></section>
+    <header><p><a href="index.html">← Todos los ejercicios</a></p><h1>Ejercicio 3 · Precios con IVA</h1><p>Bucles y arrays · 1,5 puntos</p></header>
+    <section><h2>Antes de empezar</h2><p>Don Regalo guarda en un array los precios de varios artículos <strong>antes de aplicar el IVA</strong>. Quiere mostrar al personal de la tienda cuánto cuesta cada artículo después de añadir un <strong>21 % de IVA</strong>.</p></section>
+    <section><h2>Tu turno</h2><p>Recorre el array <code>precios</code> con un bucle. Para cada posición, calcula el precio con IVA y muestra una línea con el formato <code>El artículo N cuesta PRECIO tras aplicar un 21% de IVA</code>. Los artículos se numeran desde el <strong>1</strong>, aunque las posiciones del array comienzan en 0. Todos los precios finales deben mostrarse con <strong>exactamente dos decimales</strong>.</p><ul><li><strong>No intentes conseguir todo a la vez.</strong></li><li>Primero, muestra cada precio original por consola.</li><li>Luego, muestra cada precio después de aplicar el 21 % de IVA.</li><li>Después, construye el mensaje completo con el número del artículo.</li><li>Finalmente, muestra cada precio final con dos decimales.</li></ul><p>Haz los cálculos a partir de los valores del array; no escribas directamente los resultados esperados. Edita el último bloque <code>&lt;script&gt;</code>, guarda y recarga la página.</p></section>
+    <section><h2>Resultado esperado en consola</h2><p>Con los precios iniciales, deben aparecer estas cuatro líneas, en este orden:</p><pre>El artículo 1 cuesta 121.00 tras aplicar un 21% de IVA
+El artículo 2 cuesta 24.19 tras aplicar un 21% de IVA
+El artículo 3 cuesta 60.50 tras aplicar un 21% de IVA
+El artículo 4 cuesta 181.50 tras aplicar un 21% de IVA</pre></section>
+    <section><h2>Comprueba tu solución</h2><p>La página compara las cuatro líneas mostradas en la consola con las esperadas para los precios iniciales. La corrección también revisará que recorras el array, calcules el IVA y muestres dos decimales.</p><p id="resumen" aria-live="polite"></p><ul id="resultados" class="resultados" aria-live="polite"></ul></section>
   </main>
-  <!-- CÓDIGO DEL ALUMNADO: escribe el programa debajo del dato. -->
+  <!-- CÓDIGO DEL ALUMNADO: escribe el programa debajo del array. -->
   <script>
-    const cantidad = 8;
+    const precios = [100, 19.99, 50, 150];
 
-    // Escribe tu bucle aquí. Muestra por consola todos los mensajes que se piden
+    // Recorre el array, calcula el precio con IVA y muestra una línea por artículo con dos decimales.
   </script>
 </body>
 </html>

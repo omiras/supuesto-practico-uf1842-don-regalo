@@ -18,6 +18,7 @@ body { margin: 0; background: #f5f6f8; color: #243042; font: 16px/1.6 Arial, san
 .lesson a { color: #28558a; }
 .resultados { list-style: none; padding: 0; }
 .resultados li { padding: 10px 12px; border-radius: 6px; }
+.resultados .lineas { white-space: pre-line; }
 .resultados .bien { background: #e4f4e9; color: #18572e; }
 .resultados .mal { background: #fde9e8; color: #8b2925; }
 .nota { color: #526077; }
